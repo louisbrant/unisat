@@ -1,0 +1,53 @@
+@import "~@laylazi/bootstrap-rtl-scss/scss/functions";
+
+@import "bootstrap/variables.dark";
+@import "~@laylazi/bootstrap-rtl-scss/scss/variables";
+
+@import "~@laylazi/bootstrap-rtl-scss/scss/mixins";
+@import "bootstrap/mixins/badge.dark";
+@import "bootstrap/mixins/alert.dark";
+@import "bootstrap/mixins/buttons.dark";
+@import "bootstrap/mixins/text-emphasis.dark";
+
+@import "~@laylazi/bootstrap-rtl-scss/scss/root";
+@import "~@laylazi/bootstrap-rtl-scss/scss/reboot";
+@import "~@laylazi/bootstrap-rtl-scss/scss/type";
+@import "~@laylazi/bootstrap-rtl-scss/scss/images";
+@import "~@laylazi/bootstrap-rtl-scss/scss/code";
+@import "~@laylazi/bootstrap-rtl-scss/scss/grid";
+@import "~@laylazi/bootstrap-rtl-scss/scss/tables";
+@import "~@laylazi/bootstrap-rtl-scss/scss/forms";
+@import "~@laylazi/bootstrap-rtl-scss/scss/buttons";
+@import "~@laylazi/bootstrap-rtl-scss/scss/transitions";
+@import "~@laylazi/bootstrap-rtl-scss/scss/dropdown";
+@import "~@laylazi/bootstrap-rtl-scss/scss/button-group";
+@import "~@laylazi/bootstrap-rtl-scss/scss/input-group";
+@import "~@laylazi/bootstrap-rtl-scss/scss/custom-forms";
+@import "~@laylazi/bootstrap-rtl-scss/scss/nav";
+@import "~@laylazi/bootstrap-rtl-scss/scss/navbar";
+@import "~@laylazi/bootstrap-rtl-scss/scss/card";
+@import "~@laylazi/bootstrap-rtl-scss/scss/breadcrumb";
+@import "~@laylazi/bootstrap-rtl-scss/scss/pagination";
+@import "~@laylazi/bootstrap-rtl-scss/scss/badge";
+@import "~@laylazi/bootstrap-rtl-scss/scss/jumbotron";
+@import "~@laylazi/bootstrap-rtl-scss/scss/alert";
+@import "~@laylazi/bootstrap-rtl-scss/scss/progress";
+@import "~@laylazi/bootstrap-rtl-scss/scss/media";
+@import "~@laylazi/bootstrap-rtl-scss/scss/list-group";
+@import "~@laylazi/bootstrap-rtl-scss/scss/close";
+@import "~@laylazi/bootstrap-rtl-scss/scss/toasts";
+@import "~@laylazi/bootstrap-rtl-scss/scss/modal";
+@import "~@laylazi/bootstrap-rtl-scss/scss/tooltip";
+@import "~@laylazi/bootstrap-rtl-scss/scss/popover";
+@import "~@laylazi/bootstrap-rtl-scss/scss/carousel";
+@import "~@laylazi/bootstrap-rtl-scss/scss/spinners";
+@import "~@laylazi/bootstrap-rtl-scss/scss/utilities";
+@import "~@laylazi/bootstrap-rtl-scss/scss/print";
+
+@import "style.variables.dark";
+@import 'bootstrap/utilities';
+@import 'bootstrap/api';
+
+@import 'quill.scss';
+
+@import 'style.scss';

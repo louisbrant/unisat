@@ -1,0 +1,50 @@
+@import "~@laylazi/bootstrap-rtl-scss/scss/functions";
+
+@import "bootstrap/variables";
+@import "~@laylazi/bootstrap-rtl-scss/scss/variables-rtl";
+
+@import "~@laylazi/bootstrap-rtl-scss/scss/mixins-rtl";
+@import "bootstrap/mixins/badge";
+
+@import "~@laylazi/bootstrap-rtl-scss/scss/root";
+@import "~@laylazi/bootstrap-rtl-scss/scss/reboot-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/type-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/images";
+@import "~@laylazi/bootstrap-rtl-scss/scss/code";
+@import "~@laylazi/bootstrap-rtl-scss/scss/grid";
+@import "~@laylazi/bootstrap-rtl-scss/scss/tables";
+@import "~@laylazi/bootstrap-rtl-scss/scss/forms-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/buttons";
+@import "~@laylazi/bootstrap-rtl-scss/scss/transitions";
+@import "~@laylazi/bootstrap-rtl-scss/scss/dropdown-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/button-group-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/input-group-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/custom-forms-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/nav-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/navbar-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/card-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/breadcrumb-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/pagination-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/badge";
+@import "~@laylazi/bootstrap-rtl-scss/scss/jumbotron";
+@import "~@laylazi/bootstrap-rtl-scss/scss/alert-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/progress";
+@import "~@laylazi/bootstrap-rtl-scss/scss/media";
+@import "~@laylazi/bootstrap-rtl-scss/scss/list-group-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/close-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/toasts";
+@import "~@laylazi/bootstrap-rtl-scss/scss/modal-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/tooltip";
+@import "~@laylazi/bootstrap-rtl-scss/scss/popover-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/carousel-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/spinners-rtl";
+@import "~@laylazi/bootstrap-rtl-scss/scss/utilities";
+@import "~@laylazi/bootstrap-rtl-scss/scss/print";
+
+@import "style.variables";
+@import 'bootstrap/utilities';
+@import 'bootstrap/api';
+
+@import 'quill.scss';
+
+@import 'style.scss';

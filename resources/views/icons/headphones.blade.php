@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ $class ?? '' }}" viewBox="0 0 18 18"><path d="M9,0A9,9,0,0,0,0,9v7a2,2,0,0,0,2,2H6V10H2V9A7,7,0,0,1,16,9v1H12v8h4a2,2,0,0,0,2-2V9A9,9,0,0,0,9,0ZM4,12v4H2V12Zm12,4H14V12h2Z"/></svg>

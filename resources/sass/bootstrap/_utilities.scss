@@ -1,0 +1,599 @@
+$relative-sizes: (
+        px: 1px,
+        0: 0px,
+        0\.5: 0.125rem,
+        1: 0.25rem,
+        1\.25: 0.3125rem,
+        1\.5: 0.375rem,
+        2: 0.5rem,
+        2\.5: 0.625rem,
+        3: 0.75rem,
+        3\.5: 0.875rem,
+        4: 1rem,
+        5: 1.25rem,
+        6: 1.5rem,
+        7: 1.75rem,
+        8: 2rem,
+        9: 2.25rem,
+        10: 2.5rem,
+        11: 2.75rem,
+        12: 3rem,
+        14: 3.5rem,
+        16: 4rem,
+        18: 4.5rem,
+        20: 5rem,
+        22: 5.5rem,
+        24: 6rem,
+        26: 6.5rem,
+        28: 7rem,
+        32: 8rem,
+        36: 9rem,
+        40: 10rem,
+        44: 11rem,
+        48: 12rem,
+        52: 13rem,
+        56: 14rem,
+        60: 15rem,
+        64: 16rem,
+        72: 18rem,
+        80: 20rem,
+        96: 24rem,
+        120: 30rem,
+        152: 38rem
+);
+
+$utilities: (
+        "opacity": (
+                property: opacity,
+                class: opacity,
+                responsive: true,
+                values: (
+                        0: 0,
+                        5: 0.05,
+                        10: 0.1,
+                        20: 0.2,
+                        25: 0.25,
+                        30: 0.3,
+                        40: 0.4,
+                        50: 0.5,
+                        60: 0.6,
+                        70: 0.7,
+                        75: 0.75,
+                        80: 0.8,
+                        90: 0.9,
+                        95: 0.95,
+                        100: 1,
+                )
+        ),
+
+        "position": (
+                property: position,
+                class: position,
+                responsive: true,
+                values: (
+                        absolute,
+                        relative,
+                        static,
+                        fixed,
+                        sticky
+                )
+        ),
+
+        "pointer-events": (
+                property: pointer-events,
+                class: pointer-events,
+                responsive: true,
+                values: (
+                        none, auto
+                )
+        ),
+
+        "z-index": (
+                property: z-index,
+                class: z,
+                responsive: true,
+                values: (
+                        0,
+                        1,
+                        2,
+                        10,
+                        100,
+                        1000,
+                        1001,
+                        1025,
+                        1030
+                )
+        ),
+
+        "overflow": (
+                property: overflow,
+                class: overflow,
+                responsive: true,
+                values: (
+                        visible,
+                        hidden,
+                        scroll,
+                        auto,
+                        initial,
+                        inherit
+                )
+        ),
+
+        "cursor": (
+                property: cursor,
+                class: cursor,
+                responsive: true,
+                values: (
+                        auto,
+                        default,
+                        pointer,
+                        wait,
+                        text,
+                        move,
+                        not-allowed
+                )
+        ),
+
+        "fill": (
+                property: fill,
+                class: fill,
+                responsive: false,
+                values: (
+                        inherit: inherit,
+                        current: currentColor,
+                        transparent: transparent
+                )
+        ),
+
+        "width": (
+                property: width,
+                class: width,
+                responsive: true,
+                values: map-merge(map-merge((auto: auto), $relative-sizes),
+                        (
+                                1\/2: '50%',
+                                1\/3: '33.333333%',
+                                2\/3: '66.666667%',
+                                1\/4: '25%',
+                                2\/4: '50%',
+                                3\/4: '75%',
+                                1\/5: '20%',
+                                2\/5: '40%',
+                                3\/5: '60%',
+                                4\/5: '80%',
+                                1\/6: '16.666667%',
+                                2\/6: '33.333333%',
+                                3\/6: '50%',
+                                4\/6: '66.666667%',
+                                5\/6: '83.333333%',
+                                1\/12: '8.333333%',
+                                2\/12: '16.666667%',
+                                3\/12: '25%',
+                                4\/12: '33.333333%',
+                                5\/12: '41.666667%',
+                                6\/12: '50%',
+                                7\/12: '58.333333%',
+                                8\/12: '66.666667%',
+                                9\/12: '75%',
+                                10\/12: '83.333333%',
+                                11\/12: '91.666667%',
+                                full: '100%',
+                                screen: '100vw',
+                                min: 'min-content',
+                                max: 'max-content',
+                                fit: 'fit-content',
+                        )
+                )
+        ),
+
+        "min-width": (
+                property: min-width,
+                class: min-width,
+                responsive: true,
+                values: map-merge(map-merge((none: none), $relative-sizes),
+                        (
+                                full: 100%,
+                                min: min-content,
+                                max: max-content,
+                                fit: fit-content
+                        )
+                )
+        ),
+
+        "max-width": (
+                property: max-width,
+                class: max-width,
+                responsive: true,
+                values: map-merge(map-merge((none: none), $relative-sizes),
+                        (
+                                full: 100%,
+                                min: min-content,
+                                max: max-content,
+                                fit: fit-content
+                        )
+                )
+        ),
+
+        "height": (
+                property: height,
+                class: height,
+                responsive: true,
+                values: map-merge(map-merge((auto: auto), $relative-sizes),
+                        (
+                                1\/2: 50%,
+                                1\/3: 33.333333%,
+                                2\/3: 66.666667%,
+                                1\/4: 25%,
+                                2\/4: 50%,
+                                3\/4: 75%,
+                                1\/5: 20%,
+                                2\/5: 40%,
+                                3\/5: 60%,
+                                4\/5: 80%,
+                                1\/6: 16.666667%,
+                                2\/6: 33.333333%,
+                                3\/6: 50%,
+                                4\/6: 66.666667%,
+                                5\/6: 83.333333%,
+                                full: 100%,
+                                screen: 100vh,
+                                min: min-content,
+                                max: max-content,
+                                fit: fit-content
+                        )
+                )
+        ),
+
+        "min-height": (
+                property: min-height,
+                class: min-height,
+                responsive: true,
+                values: map-merge($relative-sizes,
+                        (
+                                full: 100%,
+                                screen: 100vh,
+                                min: min-content,
+                                max: max-content,
+                                fit: fit-content,
+                        )
+                )
+        ),
+
+        "max-height": (
+                property: max-height,
+                class: max-height,
+                responsive: true,
+                values: map-merge($relative-sizes,
+                        (
+                                full: 100%,
+                                screen: 100vh,
+                                min: min-content,
+                                max: max-content,
+                                fit: fit-content,
+                        )
+                )
+        ),
+
+        "font-weight": (
+                property: font-weight,
+                class: font-weight,
+                responsive: false,
+                values: (
+                        thin: 100,
+                        extralight: 200,
+                        light: 300,
+                        normal: 400,
+                        medium: 500,
+                        semibold: 600,
+                        bold: 700,
+                        extrabold: 800,
+                        black: 900,
+                )
+        ),
+
+        "font-size": (
+                property: font-size,
+                class: font-size,
+                values: (
+                        xs: .75rem,
+                        sm: .875rem,
+                        base: 1rem,
+                        lg: 1.125rem,
+                        xl: 1.25rem
+                )
+        ),
+
+        "border-radius": (
+                property: border-radius,
+                class: border-radius,
+                values: (
+                        none: 0px,
+                        sm: 0.125rem,
+                        md: 0.375rem,
+                        lg: 0.625rem,
+                        xl: 0.875rem,
+                        2xl: 1rem,
+                        3xl: 1.5rem,
+                        full: 9999px
+                )
+        ),
+
+        "border-top-left-radius": (
+                property: border-top-left-radius,
+                class: border-top-left-radius,
+                values: (
+                        none: 0px,
+                        sm: 0.125rem,
+                        md: 0.375rem,
+                        lg: 0.625rem,
+                        xl: 0.875rem,
+                        2xl: 1rem,
+                        3xl: 1.5rem,
+                        full: 9999px
+                )
+        ),
+
+        "border-top-right-radius": (
+                property: border-top-right-radius,
+                class: border-top-right-radius,
+                values: (
+                        none: 0px,
+                        sm: 0.125rem,
+                        md: 0.375rem,
+                        lg: 0.625rem,
+                        xl: 0.875rem,
+                        2xl: 1rem,
+                        3xl: 1.5rem,
+                        full: 9999px
+                )
+        ),
+
+        "border-bottom-left-radius": (
+                property: border-bottom-left-radius,
+                class: border-bottom-left-radius,
+                values: (
+                        none: 0px,
+                        sm: 0.125rem,
+                        md: 0.375rem,
+                        lg: 0.625rem,
+                        xl: 0.875rem,
+                        2xl: 1rem,
+                        3xl: 1.5rem,
+                        full: 9999px
+                )
+        ),
+
+        "border-bottom-right-radius": (
+                property: border-bottom-right-radius,
+                class: border-bottom-right-radius,
+                values: (
+                        none: 0px,
+                        sm: 0.125rem,
+                        md: 0.375rem,
+                        lg: 0.625rem,
+                        xl: 0.875rem,
+                        2xl: 1rem,
+                        3xl: 1.5rem,
+                        full: 9999px
+                )
+        ),
+
+        "top": (
+                property: top,
+                class: top,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "right": (
+                property: right,
+                class: right,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "bottom": (
+                property: bottom,
+                class: bottom,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "left": (
+                property: left,
+                class: left,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "border-top": (
+                property: border-top,
+                responsive: true,
+                values: (
+                        null: $border-width solid $border-color,
+                        0: 0
+                )
+        ),
+
+        "border-right": (
+                property: border-right,
+                responsive: true,
+                values: (
+                        null: $border-width solid $border-color,
+                        0: 0
+                )
+        ),
+
+        "border-bottom": (
+                property: border-bottom,
+                responsive: true,
+                values: (
+                        null: $border-width solid $border-color,
+                        0: 0
+                )
+        ),
+
+        "border-left": (
+                property: border-left,
+                responsive: true,
+                values: (
+                        null: $border-width solid $border-color,
+                        0: 0
+                )
+        ),
+
+        "border": (
+                property: border,
+                responsive: true,
+                values: (
+                        solid, dashed, dotted, double, hidden, none
+                )
+        ),
+
+        "background-size": (
+                property: background-size,
+                class: background-size,
+                responsive: false,
+                values: (
+                        auto, cover, contain
+                )
+        ),
+
+        "background-position": (
+                property: background-position,
+                class: background-position,
+                responsive: false,
+                values: (
+                        bottom: bottom,
+                        center: center,
+                        left: left,
+                        left-bottom: left bottom,
+                        left-top: left top,
+                        right: right,
+                        right-bottom: right bottom,
+                        right-top: right top,
+                        top: top,
+                )
+        ),
+
+        "backdrop-filter-blur": (
+                property: backdrop-filter,
+                class: backdrop-filter-blur,
+                values: (
+                        null: blur(8px),
+                        none: blur(0),
+                        sm: blur(4px),
+                        md: blur(12px),
+                        lg: blur(16px),
+                        xl: blur(24px),
+                        2xl: blur(40px),
+                        3xl: blur(64px),
+                )
+        ),
+
+        "flex": (
+                property: flex,
+                class: flex,
+                responsive: true,
+                values: (
+                        1: 1 1 0%,
+                        flex: 1 1 auto,
+                        initial: 0 1 auto,
+                        none: none
+                )
+        ),
+
+        "border-width": (
+                property: border-width,
+                class: border-width,
+                values: (
+                        null: 1px,
+                        0: 0px,
+                        2: 2px,
+                        4: 4px,
+                        8: 8px,
+                )
+        ),
+
+        "stroke": (
+                property: stroke,
+                class: stroke,
+                values: $theme-colors
+        ),
+
+        "scroll-behavior": (
+                property: scroll-behavior,
+                class: scroll-behavior,
+                responsive: false,
+                values: (
+                        auto,
+                        smooth
+                )
+        ),
+
+        "scroll-margin-top": (
+                property: scroll-margin-top,
+                class: scroll-margin-top,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "scroll-margin-right": (
+                property: scroll-margin-right,
+                class: scroll-margin-right,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "scroll-margin-bottom": (
+                property: scroll-margin-bottom,
+                class: scroll-margin-bottom,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "scroll-margin-left": (
+                property: scroll-margin-left,
+                class: scroll-margin-left,
+                responsive: true,
+                values: $relative-sizes
+        ),
+
+        "image-rendering": (
+                property: image-rendering,
+                class: image-rendering,
+                responsive: false,
+                values: (
+                        auto: auto,
+                        smooth: smooth,
+                        high-quality: high-quality,
+                        crisp-edges: crisp-edgesm,
+                        pixelated: pixelated,
+                        optimize-contrast: -webkit-optimize-contrast,
+                )
+        ),
+
+        "white-space": (
+                property: white-space,
+                class: white-space,
+                responsive: false,
+                values: (
+                        normal: normal,
+                        nowrap: nowrap,
+                        pre: pre,
+                        pre-wrap: pre-wrap,
+                        pre-line: pre-line,
+                        break-spaces: break-spaces,
+                )
+        ),
+
+        "bg-base": (
+                property: background-color,
+                class: bg-base,
+                values: (
+                        0: $base-0,
+                        1: $base-1,
+                        2: $base-2
+                )
+        )
+);

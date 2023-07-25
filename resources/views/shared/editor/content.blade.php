@@ -1,0 +1,1 @@
+<div id="result-{{ $id }}" class="border-0 rounded-0" data-text-editor="{{ $id }}" data-text-editor-readonly="{{ request()->is('templates/*') || request()->is('chats/*') || request()->is('documents/new') || request()->is('messages/*') ? 'true' : 'false' }}">{!! clean(encodeQuill($text)) !!}</div>
